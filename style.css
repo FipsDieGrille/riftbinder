@@ -24,6 +24,7 @@ main {
 
 h1 { font-size: 2rem; margin: 0 0 4px; }
 h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+h3 { font-size: 1rem; margin: 20px 0 4px; }
 p, li { color: var(--text); }
 .tagline { color: var(--muted); margin: 0 0 24px; }
 a { color: var(--accent); }
@@ -31,18 +32,16 @@ a { color: var(--accent); }
 ul { padding-left: 20px; }
 
 .shots {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 12px;
-  overflow-x: auto;
-  padding-bottom: 8px;
 }
 
 .shots img {
-  height: 480px;
-  width: auto;
+  width: 100%;
+  height: auto;
   border: 1px solid var(--border);
   border-radius: 12px;
-  flex: none;
 }
 
 .notice, footer {
