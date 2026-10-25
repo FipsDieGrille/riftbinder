@@ -125,23 +125,20 @@ main {
 
 .phones {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 14px;
 }
 
+/* every screenshot has exactly the same size */
 .phones img {
-  width: 100%;
-  max-width: 170px;
+  width: 170px;
   height: auto;
-  flex: 1 1 0;
-  min-width: 0;
+  flex: none;
   border: 1px solid var(--border);
   border-radius: 22px;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
 }
-
-/* a lone screenshot keeps the same width as one of a pair */
-.phones.single img { flex: none; }
 
 /* ---- Footer ---- */
 
@@ -178,5 +175,5 @@ main {
     padding: 40px 0;
   }
   .feature:nth-of-type(even) .copy { order: 0; }
-  .phones img { max-width: 150px; }
+  .phones img { width: 150px; }
 }
