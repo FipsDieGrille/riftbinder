@@ -4,85 +4,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Riftbinder – collection tracker and deck builder for Riftbound players</title>
-  <meta name="description" content="A free, personal collection tracker and deck builder for Riftbound players. No accounts, no ads, everything stays on your device.">
+  <meta name="description" content="A free collection tracker and deck builder for Riftbound players. No accounts, no ads, everything stays on your device.">
+  <meta name="theme-color" content="#120f2e">
+  <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <h1>Riftbinder</h1>
-  <p class="tagline">A free collection tracker and deck builder for Riftbound players.</p>
 
-  <p>
-    Riftbinder keeps your Riftbound collection and decks in one place. Track which cards you own, build and import decklists, see exactly which cards each deck is still missing, compare collections with friends to spot trades, and back everything up. It all stays on your device, with no account.
-  </p>
+  <header class="hero">
+    <img class="logo" src="icon.png" alt="Riftbinder app icon">
+    <h1>Riftbinder</h1>
+    <p class="tagline">A free collection tracker and deck builder for Riftbound players.</p>
+    <p class="summary">
+      Riftbinder keeps your Riftbound collection and decks in one place. Track which cards you own, build and import decklists, see exactly which cards each deck is still missing, compare collections with friends to spot trades, and back everything up. It all stays on your device, with no account.
+    </p>
+    <ul class="badges">
+      <li>Free</li>
+      <li>No ads</li>
+      <li>No account</li>
+      <li>Data stays on your device</li>
+    </ul>
+  </header>
 
-  <h2>What it does</h2>
+  <section class="feature">
+    <div class="copy">
+      <h2>Library</h2>
+      <p class="lead">Every card, and how many you own.</p>
+      <ul>
+        <li>Browse as a list or a grid, and pinch to resize the grid.</li>
+        <li>Set how many copies you own right in the list, with undo.</li>
+        <li>Search by name, card code, tag or card text.</li>
+        <li>Filter by set, domain, type, rarity, variant, energy, power and might.</li>
+        <li>Tap a card to zoom in and swipe through the list.</li>
+        <li>"Hide Decks" shows only the copies that are not committed to a deck.</li>
+      </ul>
+    </div>
+    <div class="phones stagger">
+      <img src="screenshots/library-grid.jpg" alt="Library in grid view with owned copies per card" loading="lazy">
+      <img src="screenshots/library-list.jpg" alt="Library in list view" loading="lazy">
+    </div>
+  </section>
 
-  <h3>Library</h3>
-  <ul>
-    <li>Browse every card as a list or a grid. Pinch to resize the grid.</li>
-    <li>Set how many copies of each card you own, right in the list, with undo.</li>
-    <li>Search by name, card code, tag or card text.</li>
-    <li>Filter by set, domain, type, rarity, variant, energy, power and might.</li>
-    <li>Tap a card to zoom in and swipe through the list.</li>
-    <li>"Hide Decks" shows only the copies that are not committed to a deck.</li>
-  </ul>
+  <section class="feature">
+    <div class="copy">
+      <h2>Decks</h2>
+      <p class="lead">Build it, import it, share it.</p>
+      <ul>
+        <li>Legend, champion, main deck, battlefields, runes and sideboard.</li>
+        <li>Import a deck from a Riftbound deck code, or copy your deck as a code to share it.</li>
+        <li>Drag decks to reorder them, long-press to duplicate, swipe to delete.</li>
+        <li>Edits stay in a draft until you save, and the app asks before you leave with unsaved changes.</li>
+      </ul>
+    </div>
+    <div class="phones stagger">
+      <img src="screenshots/decks.jpg" alt="Deck list showing missing cards per deck" loading="lazy">
+      <img src="screenshots/deck-detail.jpg" alt="A deck with legend, champion and main deck" loading="lazy">
+    </div>
+  </section>
 
-  <h3>Decks</h3>
-  <ul>
-    <li>Build decklists with legend, champion, main deck, battlefields, runes and sideboard.</li>
-    <li>Import a deck from a Riftbound deck code, or copy your deck as a code to share it.</li>
-    <li>Drag decks to reorder them, long-press to duplicate, swipe to delete.</li>
-    <li>Edits stay in a draft until you save, and the app asks before you leave with unsaved changes.</li>
-    <li>Deck statistics: energy, might and power curves, plus type and domain mix.</li>
-  </ul>
+  <section class="feature">
+    <div class="copy">
+      <h2>Deck statistics</h2>
+      <p class="lead">See what your deck is made of.</p>
+      <ul>
+        <li>Energy, might and power curves.</li>
+        <li>Type and domain mix at a glance.</li>
+      </ul>
+    </div>
+    <div class="phones single">
+      <img src="screenshots/deck-stats.jpg" alt="Deck statistics: might and power curves" loading="lazy">
+    </div>
+  </section>
 
-  <h3>Missing</h3>
-  <ul>
-    <li>For every deck, see which cards you still need and how many.</li>
-    <li>Tap a card to mark a copy as acquired.</li>
-    <li>"Shared copies" decides whether all decks may use the same copies of a card, or whether a copy belongs to one deck only.</li>
-  </ul>
+  <section class="feature">
+    <div class="copy">
+      <h2>Missing cards</h2>
+      <p class="lead">The question the app was built to answer.</p>
+      <ul>
+        <li>For every deck, see which cards you still need and how many.</li>
+        <li>Tap a card to mark a copy as acquired.</li>
+        <li>"Shared copies" decides whether all decks may use the same copies of a card, or whether a copy belongs to one deck only.</li>
+      </ul>
+    </div>
+    <div class="phones single">
+      <img src="screenshots/missing.jpg" alt="Missing cards across decks" loading="lazy">
+    </div>
+  </section>
 
-  <h3>Friend collections</h3>
-  <ul>
-    <li>Add another player's collection from a collection code. It is read-only.</li>
-    <li>See which of their cards you are missing, and record trades with an undo.</li>
-    <li>Share your own collection as a code, with or without your decks.</li>
-  </ul>
+  <section class="feature">
+    <div class="copy">
+      <h2>Share, trade and back up</h2>
+      <p class="lead">Your collection is yours.</p>
+      <ul>
+        <li>Add a friend's collection from a collection code. It is read-only.</li>
+        <li>See which of their cards you are missing, and record trades with an undo.</li>
+        <li>Share your own collection as a code, with or without your decks.</li>
+        <li>Export everything to a backup file and restore it later, for example on a new phone.</li>
+        <li>Card size, tap sounds and volume are up to you.</li>
+      </ul>
+    </div>
+    <div class="phones single">
+      <img src="screenshots/settings.jpg" alt="Settings: sharing and backup" loading="lazy">
+    </div>
+  </section>
 
-  <h3>Settings and backup</h3>
-  <ul>
-    <li>Card size, tap sounds and volume.</li>
-    <li>Export your collection and decks to a backup file and restore them later, for example on a new phone.</li>
-  </ul>
-
-  <p>It is a deck builder and card library only. It does not simulate or automate gameplay.</p>
-
-  <h2>Screenshots</h2>
-  <div class="shots">
-    <img src="screenshots/library-grid.jpg" alt="Library in grid view with owned copies per card" loading="lazy">
-    <img src="screenshots/library-list.jpg" alt="Library in list view" loading="lazy">
-    <img src="screenshots/decks.jpg" alt="Deck list showing missing cards per deck" loading="lazy">
-    <img src="screenshots/deck-detail.jpg" alt="A deck with legend, champion and main deck" loading="lazy">
-    <img src="screenshots/missing.jpg" alt="Missing cards across decks" loading="lazy">
-    <img src="screenshots/deck-stats.jpg" alt="Deck statistics: might and power curves" loading="lazy">
-    <img src="screenshots/settings.jpg" alt="Settings and backup" loading="lazy">
-  </div>
-
-  <h2>Free and private</h2>
-  <ul>
-    <li>Free: no ads, no purchases, no donations.</li>
-    <li>Everything is stored on your device. No accounts, no server, no analytics.</li>
-    <li>Platforms: iOS and Android. Currently in private testing, not yet in the stores.</li>
-  </ul>
-  <p>See the <a href="privacy.html">privacy policy</a>.</p>
-
-  <h2>Contact</h2>
-  <p><a href="mailto:d.grigoleit@netklusiv.de">d.grigoleit@netklusiv.de</a></p>
+  <p class="links"><a href="privacy.html">Privacy policy</a> · <a href="mailto:d.grigoleit@netklusiv.de">d.grigoleit@netklusiv.de</a></p>
 
   <p class="notice">
     Riftbinder was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
+    It is a deck builder and card library only and does not simulate or automate gameplay.
   </p>
 
 </main>
